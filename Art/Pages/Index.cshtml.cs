@@ -19,7 +19,7 @@ namespace Art.Pages
 
         public void OnGet()
         {
-
+            ViewData["Authorized"] = true;
         }
     }
 }
