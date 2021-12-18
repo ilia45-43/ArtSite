@@ -1,0 +1,71 @@
+﻿@page
+@model Art.Pages.Account.ProfileModel
+@{
+}
+
+<div class="banner_background">
+    <div class="shadow">
+    </div>
+    <img src="~/images/pascal-debrunner-1WQ5RZuH9xo-unsplash.jpg" alt="Alternate Text" />
+</div>
+<div class="container profile_wrapper">
+    <div class="profile_info">
+        <div class="profile_picture profile_element">
+
+        </div>
+        <div class="profile_name profile_element">
+            Username
+            <div class="profile_description">
+                Description
+            </div>
+            <div class="profile_stats">
+                Test | Test | Test
+            </div>
+        </div>
+    </div>
+    <div class="navbar navbar-expand-lg navbar-dark bg-black">
+        <ul class="navbar-nav me-auto">
+            <li class="nav-item"><a class="nav-link" href="#">Recent</a></li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Artworks</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Popular</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Collections</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav me-auto justify-content-end d-flex" style="width: 100%;">
+            <li class="nav-item">
+                <a class="nav-link btn btn-info" href="#">Subscribe</a>
+            </li>
+        </ul>
+    </div>
+    <div class="artwork_container">
+        <div class="topic position-relative">
+            <h5>Recent</h5>
+            <div class="search position-absolute" style="width: 300px; right: 10px; top: -5px;">
+                <div class="input-group">
+                    <input type="text" class="form-control bg-black text-light" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+                    <span class="input-group-text bg-black" id="addon-wrapping">
+                        <i class="fas fa-search"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <section class="imageCollage">
+            @for (int i = 0; i < 15; i++)
+            {
+                Random r = new Random();
+                var w = (r.Next(5) + 1) * 100 + r.Next(100);
+                <a class="artwork" href="/artwork/index">
+                    <div class="image">
+                        <div class="artwork_"></div>
+                        <img src="https://placeimg.com/@w/@w/animals" alt="Placeholder">
+                    </div>
+                </a>
+            }
+        </section>
+    </div>
+</div>

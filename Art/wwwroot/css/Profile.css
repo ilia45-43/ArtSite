@@ -1,0 +1,59 @@
+﻿body {
+}
+.banner_background {
+    top: 70px;
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+    .banner_background .shadow {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        box-shadow: inset 0 -200px 200px #000 !important;
+    }
+    .banner_background img {
+        z-index: 1;
+        position: relative;
+        width: 100%;
+    }
+.profile_wrapper {
+    margin-top: 200px;
+    position: relative;
+    z-index: 2;
+}
+    .profile_wrapper .profile_info {
+        margin-bottom: 30px;
+        width: 100%;
+    }
+        .profile_wrapper .profile_info .profile_picture {
+            width: 100px;
+            height: 100px;
+            background: #111;
+        }
+        .profile_wrapper .profile_info .profile_name {
+            font-size: 32pt;
+            position: absolute;
+            left: 150px;
+            top: -15px;
+            color: #eee;
+        }
+            .profile_wrapper .profile_info .profile_name .profile_stats, .profile_description {
+                font-size: 12pt;
+            }
+.artwork_container {
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.topic {
+    margin-bottom: 20px;
+    padding: 0 10px;
+}

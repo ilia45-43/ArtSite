@@ -1,0 +1,38 @@
+﻿body {
+}
+.popular_users {
+    margin: 10px 0;
+}
+.users {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.user_card {
+    width: 150px;
+    height: 200px;
+    flex-wrap: wrap;
+    position: relative;
+    transition: ease-in-out;
+}
+.user_card:hover {
+    background: #111;
+}
+    .user_card .username, .user_card .description, .user_card .profile_picture {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    .user_card .profile_picture .image {
+        width: 100px;
+        height: 100px;
+        background: #222;
+        margin: auto;
+    }
+    .user_card .username {
+        font-size: 18pt;
+    }
+    .user_card .description {
+        font-size: 12pt;
+    }

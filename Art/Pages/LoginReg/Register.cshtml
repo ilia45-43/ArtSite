@@ -1,0 +1,28 @@
+﻿@page
+@model Art.Pages.LoginReg.RegisterModel
+@{
+    Layout = "../Shared/_LoginRegLayout";
+}
+
+<h1 class="h1">Register</h1>
+<h6 class="h6">already have an account? <a href="/LoginReg/Login">Login</a></h6>
+<br />
+<form method="post">
+    <div class="form-floating mb-3 text-light">
+        <input type="email" class="form-control text-light bg-secondary" id="floatingInput" placeholder="name@example.com">
+        <label for="floatingInput" class="text-light">Email address</label>
+    </div>
+    <div class="form-floating mb-3">
+        <input type="text" name="username" class="form-control text-light bg-secondary" id="floatingInput" placeholder="name@example.com">
+        <label for="floatingInput" class="text-light">Username</label>
+    </div>
+    <div class="form-floating mb-3">
+        <input type="text" name="password" class="form-control text-light bg-secondary" id="floatingInput" placeholder="name@example.com">
+        <label for="floatingInput" class="text-light">Password</label>
+    </div>
+    <div class="form-floating mb-3">
+        <input type="text" name="confirmpassword" class="form-control text-light bg-secondary" id="floatingInput" placeholder="name@example.com">
+        <label for="floatingInput" class="text-light">Confirm Password</label>
+    </div>
+    <button class="btn btn-secondary">Register</button>
+</form>
