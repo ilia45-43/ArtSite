@@ -1,0 +1,74 @@
+﻿@page
+@model Art.Pages.Home.PopularModel
+@{
+}
+<div class="container">
+
+    <section class="popular_users">
+        <h4>Popular users</h4>
+        <div class="users">
+            @for (int i = 0; i < 8; i++)
+            {
+                <div class="user_card">
+                    <div class="profile_picture">
+                        <div class="image"></div>
+                    </div>
+                    <div class="username">Username</div>
+                    <div class="description">Artist</div>
+                </div>
+            }
+        </div>
+    </section>
+    <h4>Popular artworks</h4>
+    <section class="imageCollage">
+        <div class="artwork">
+            <div class="image">
+                <div class="artwork_"></div>
+                <img src="https://placeimg.com/300/200/animals" alt="Placeholder">
+            </div>
+        </div>
+        <div class="artwork">
+            <div class="image">
+                <img src="https://placeimg.com/500/200/animals" alt="Placeholder">
+            </div>
+        </div>
+        <div class="artwork">
+            <div class="image">
+                <img src="https://placeimg.com/200/200/animals" alt="Placeholder">
+            </div>
+        </div>
+        <div class="artwork">
+            <div class="image">
+                <img src="https://placeimg.com/200/200/animals" alt="Placeholder">
+            </div>
+        </div>
+        <div class="artwork">
+            <div class="image">
+                <img src="https://placeimg.com/400/200/animals" alt="Placeholder">
+            </div>
+        </div>
+        <div class="artwork">
+            <div class="image">
+                <img src="https://placeimg.com/300/200/animals" alt="Placeholder">
+            </div>
+        </div>
+        <div class="artwork">
+            <div class="image">
+                <img src="https://placeimg.com/200/200/animals" alt="Placeholder">
+            </div>
+        </div>
+        <div class="artwork">
+            <div class="image">
+                <img src="https://placeimg.com/200/200/animals" alt="Placeholder">
+            </div>
+        </div>
+    </section>
+</div>
+
+@section Scripts {
+    <script>
+        $(".artwork").on("click", (e) => {
+            console.log($(e.currentTarget)[0]);
+        });
+    </script>
+}

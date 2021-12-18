@@ -1,0 +1,112 @@
+﻿body {
+}
+.artwork_page {
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+.image_container {
+    position: relative;
+}
+    .image_container .image_wrapper {
+        position: relative;
+        width: calc(100% - 400px);
+        height: 600px;
+    }
+        .image_container .image_wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        .image_container .artwork_statistics {
+            width: calc(100% - 500px);
+            display: flex;
+        }
+        .image_container .artwork_info .user_avatar {
+            position: absolute;
+            width: 70px;
+            height: 70px;
+            background: #222;
+        }
+        .image_container .artwork_info .username {
+            margin-left: 80px;
+        }
+.artwork_name {
+    font-size: 18pt;
+}
+.artwork_statistics .likes, .artwork_statistics .favorites {
+    margin: 10px;
+}
+.recomended {
+    position: absolute;
+    right: 0;
+    width: 300px;
+    height: 800px;
+}
+.artwork_preview {
+    text-decoration: none;
+    color: #fff;
+    width: 100px;
+    position: relative;
+    display: inline-block;
+}
+    .artwork_preview .image {
+        width: 100%;
+        height: 100px;
+        position: relative;
+    }
+    .artwork_preview .image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+.artwork_preview .name {
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    font-size: 14pt;
+    margin-top: 5px;
+}
+.spacer {
+    margin: 20px 0;
+}
+.comments {
+    margin-top: 150px;
+}
+.comments .comment {
+    width: 60%;
+    background: #111;
+    height: 140px;
+    position: relative;
+}
+.comments .comment {
+    position: relative;
+    padding: 10px;
+    margin: 20px 0;
+}
+    .comments .comment .user_info {
+        position: absolute;
+        left: 10px;
+        top: 15px;
+    }
+        .comments .comment .user_info .username {
+            font-size: 13pt;
+            margin-top: 5px;
+        }
+        .comments .comment .user_info .image {
+            width: 80px;
+            height: 80px;
+        }
+        .comments .comment .user_info .image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+.comments .comment .text {
+    padding-left: 100px;
+}
+.comments .comment .likes {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}

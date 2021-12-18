@@ -3,50 +3,21 @@
 @{
     ViewData["Title"] = "Home page";
 }
-
-<section class="imageCollage">
-    <div class="artwork">
-        <div class="image">
-            <div class="artwork_"></div>
-            <img src="https://placeimg.com/300/200/animals" alt="Placeholder">
-        </div>
-    </div>
-    <div class="artwork">
-        <div class="image">
-            <img src="https://placeimg.com/500/200/animals" alt="Placeholder">
-        </div>
-    </div>
-    <div class="artwork">
-        <div class="image">
-            <img src="https://placeimg.com/200/200/animals" alt="Placeholder">
-        </div>
-    </div>
-    <div class="artwork">
-        <div class="image">
-            <img src="https://placeimg.com/200/200/animals" alt="Placeholder">
-        </div>
-    </div>
-    <div class="artwork">
-        <div class="image">
-            <img src="https://placeimg.com/400/200/animals" alt="Placeholder">
-        </div>
-    </div>
-    <div class="artwork">
-        <div class="image">
-            <img src="https://placeimg.com/300/200/animals" alt="Placeholder">
-        </div>
-    </div>
-    <div class="artwork">
-        <div class="image">
-            <img src="https://placeimg.com/200/200/animals" alt="Placeholder">
-        </div>
-    </div>
-    <div class="artwork">
-        <div class="image">
-            <img src="https://placeimg.com/200/200/animals" alt="Placeholder">
-        </div>
-    </div>
-</section>
+<div class="container">
+    <section class="imageCollage">
+        @for (int i = 0; i < 20; i++)
+        {
+            Random r = new Random();
+            var w = (r.Next(10) * 10 + 200 + r.Next(100));
+            <a href="/artwork/index" class="artwork">
+                <div class="image">
+                    <div class="artwork_"></div>
+                    <img src="https://placeimg.com/@w/200/animals" alt="Placeholder">
+                </div>
+            </a>
+        }
+    </section>
+</div>
 <br />
 <br />
 <br />

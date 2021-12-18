@@ -3,11 +3,80 @@
 @{
 }
 
-<div class="container">
-    <div class="artwork">
-        <div class="image">
-            <div class="artwork"></div>
+<div class="container artwork_page">
+    <div class="image_container">
+        <div class="recomended">
+            <h5 class="spacer">More from Username</h5>
+            @for (int i = 1; i <= 5; i++)
+            {
+                var h = i * 41 + 400;
+                <a class="artwork_preview" href="#">
+                    <div class="image">
+                        <img src="https://placeimg.com/200/@h/animals" alt="Placeholder">
+                    </div>
+                    <div class="name">Test</div>
+                </a>
+            }
+
+            <h5 class="spacer">More like this</h5>
+            @for (int i = 1; i <= 4; i++)
+            {
+                var w = i * 52 + 300;
+                <a class="artwork_preview" href="#">
+                    <div class="image">
+                        <img src="https://placeimg.com/@w/200/animals" alt="Placeholder">
+                    </div>
+                    <div class="name">Test</div>
+                </a>
+            }
+        </div>
+        <div class="image_wrapper">
             <img src="https://placeimg.com/300/200/animals" alt="Placeholder">
         </div>
+        <div class="artwork_statistics">
+            <div class="likes">
+                <i class="far fa-heart"></i> 10k
+            </div>
+            <div class="favorites">
+                <i class="far fa-star"></i> Add to favorites
+            </div>
+        </div>
+        <div class="artwork_info">
+            <div class="user_avatar"></div>
+            <div class="username">
+                <div class="artwork_name">Name</div>
+                <div>by <a href="/account/profile">Username</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="comments">
+        <h3>Comments</h3>
+        @for (int i = 0; i < 3; i++)
+            {
+                var z = i * 12 + 254;
+                string t = ((float)i * 10 / 2) + "k";
+            <div class="comment">
+                <div class="user_info">
+                    <div class="image">
+                        <img src="https://placeimg.com/@z/@z/animals" alt="Placeholder">
+                    </div>
+                    <div class="username">
+                        Username
+                    </div>
+                </div>
+                <div class="text">
+                    Hello world,Hello world,Hello world,Hello world,Hello world,Hello world, Hello world,Hello world,Hello world,Hello world;
+                </div>
+                <div class="likes">
+                    @t <i class="far fa-heart"></i>
+                </div>
+            </div>
+        }
     </div>
 </div>
+
+@section Scripts {
+    <script>
+
+    </script>
+}
